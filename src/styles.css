@@ -1,0 +1,433 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@600&family=Titillium+Web&display=swap');
+
+header {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../assets/imagem1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* CLASSES AUXILIARES */
+
+.montserrat {
+    font-family: 'Montserrat';
+}
+
+.playfair {
+    font-family: 'Playfair Display';
+}
+
+.flex {
+    display: flex;
+}
+
+.color-white {
+    color: #FFFFFF;
+}
+
+.column {
+    flex-direction: column;
+    align-items: center;
+}
+
+.fixOnTop {
+    position: fixed;
+    top: 0px;
+}
+
+.header__container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.title {
+    color: #FFFFFF;
+    align-items: center;
+    flex-direction: column;
+}
+
+.title h3 {
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.title h1 {
+    font-weight: 600;
+    font-size: 53px;
+}
+
+.buttons__container {
+    justify-content: center;
+    margin-top: 16px;
+    padding: 0px;
+    gap: 8px;
+    width: 328px;
+    height: 49px;
+}
+
+.buttons__container button {
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    width: 160px;
+    padding: 16px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.suits__view {
+    background: #7A7266;
+}
+
+.reservations {
+    background: #5A493E;
+}
+
+.nav__container {
+    align-items: center;
+    height: 70px;
+    width: 100%;
+    display: flex;
+    background: #2A2A2A;
+    box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.12);
+    justify-content: space-evenly;
+    z-index: 9999;
+}
+
+.reservation__button button {
+    color: #FFFFFF;
+    width: 105px;
+    height: 45px;
+    background: #7A7266;
+    box-shadow: 0px 4px 20px rgba(46, 1, 25, 0.3);
+    border: none;
+    cursor: pointer;
+}
+
+.menu__icon i {
+    color: white;
+}
+
+.suits__container {
+    background-color: #7A7266;
+    height: 814px;
+}
+
+.subtitle__container {
+    font-size: 34px;
+    text-align: center;
+    width: 312px;
+    height: 69px;
+    margin-top: 64px;
+}
+
+.carousel__flex {
+    position: relative;
+}
+
+.arrow-border {
+    position: absolute;
+    width: 46px;
+    height: 62px;
+    opacity: 0.75;
+    background-color: #D9D9D9;
+}
+
+.arrow-color {
+    color: #2A2A2A;
+    opacity: 0.9;
+    z-index: 3;
+}
+
+.carousel__container {
+    height: 440px;
+    width: 312px;
+}
+
+.carousel-inner {
+    height: 440px;
+    width: 312px;
+}
+
+.carousel-control-next {
+    opacity: 1 !important;
+}
+
+.carousel-control-prev {
+    opacity: 1 !important;
+}
+
+.box_container {
+    position: absolute;
+    background-color: #FFFFFF;
+    top: 346px;
+    height: 195px;
+    width: 280px;
+    text-align: center;
+    justify-content: center;
+}
+
+.suits__description h3 {
+    font-size: 22px;
+}
+
+.suits__description p {
+    font-size: 14px;
+    margin-top: 8px;
+}
+
+.hyperlink {
+    margin-top: 136px;
+    width: 180px;
+    height: 49px;
+}
+
+.hyperlink a {
+    font-size: 14px;
+    text-decoration: underline;
+    padding: 16px 24px;
+}
+
+.more__button button {
+    font-size: 14px;
+    width: 125px;
+    height: 49px;
+    margin-top: 24px;
+    padding: 16px 24px;
+    border: none;
+    cursor: pointer;
+}
+
+.motel__background {
+    background-image: url('../assets/imagem3.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 312px;
+}
+
+.about__container {
+    position: relative;
+    height: 1056px;
+    background-color: #EEEEEE;
+}
+
+.motel__description {
+    position: absolute;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+    padding: 72px 32px;
+    width: 312px;
+    height: 696px;
+    top: 290px;
+}
+
+.motel__description h3 {
+    font-size: 34px;
+}
+
+.motel__description article p {
+    font-weight: 400;
+    line-height: 160%;
+    font-size: 14px;
+}
+
+.courtesy__section {
+    height: 1500px;
+    background-color: #6C6359;
+}
+
+.courtesy__title {
+    font-size: 34px;
+    text-align: center;
+    padding: 64px 0 32px 0;
+}
+
+.background__card {
+    width: 100%;
+    height: 224px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.image__description {
+    font-size: 9px;
+    font-weight: 600;
+    position: relative;
+    top: 206px;
+    left: 8px;
+}
+
+.card_1 {
+    background-image: url('../assets/cortesia1.jpg');
+}
+
+.card_2 {
+    background-image: url('../assets/aniversario.jpg');
+}
+
+.card_3 {
+    background-image: url('../assets/descontos.jpg');
+}
+
+.description__card {
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 248px;
+    height: 132px;
+}
+
+.description__card h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.description__card p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.dsc__card2 {
+    margin-top: 32px;
+}
+
+.box {
+    width: 312px;
+    height: 377px;
+    background-color: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.box_2 {
+    height: 428px;
+}
+
+.box__container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 16px;
+}
+
+.more__courtesy__button {
+    justify-content: center;
+    margin-top: 32px;
+}
+
+.more__courtesy__button button {
+    padding: 16px 24px;
+    height: 49px;
+    font-size: 14px;
+    background: #2A2A2A;
+    border: none;
+    cursor: pointer;
+}
+
+.location__section {
+    height: 674px;
+    background-color: #EEEEEE;
+    justify-content: center;
+}
+
+.location__container {
+    background-color: #FFFFFF;
+    width: 312px;
+    height: 546px;
+    filter: drop-shadow(0px 4px 10px rgba(0, 0, 0, 0.08));
+}
+
+.map {
+    width: 100%;
+    height: 312px;
+}
+
+.location__description {
+    text-align: center;
+    width: 100%;
+    height: 234px;
+    justify-content: space-evenly;
+}
+
+.location__description h3 {
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.location__description p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+.route button {
+    padding: 16px 24px;
+    height: 49px;
+    border: none;
+    cursor: pointer;
+    background: #5A493E;
+}
+
+footer {
+    height: 511px;
+    background-color: #2A2A2A;
+    justify-content: space-evenly;
+}
+
+.logo__footer {
+    width: 189px;
+    height: 78.3px;
+}
+
+.logo__footer img {
+    width: 100%;
+    height: 100%;
+}
+
+.bar {
+    background-color: #D9D9D9;
+    width: 296px;
+    height: 1px;
+}
+
+.contact__container {
+    flex-direction: column;
+    width: 296px;
+    height: 272px;
+    justify-content: space-between;
+}
+
+.btn-1 {
+    box-shadow: 0px 4px 10px rgba(80, 8, 21, 0.25);
+}
+
+.contact__btn button {
+    width: 100%;
+    cursor: pointer;
+    padding: 16px 32px;
+}
+
+.background_btn {
+    border: none;
+    background: #7A7266;
+}
+
+.border_btn{
+    border: 1.5px solid #FFFFFF;
+    background-color: #2A2A2A;
+}
+
+.copyright {
+    background-color: #000;
+    font-family: 'Titillium Web';
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+    color: #FFFFFF;
+    height: 106px;
+    text-transform: uppercase;
+    padding-top: 12px; 
+}
