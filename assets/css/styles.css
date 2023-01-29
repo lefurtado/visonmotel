@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@600&family=Titillium+Web&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&family=Playfair+Display:wght@600&family=Titillium+Web&display=swap');
 
 header {
     background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('/assets/img/imagem1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 /* CLASSES AUXILIARES */
@@ -33,6 +37,26 @@ header {
 .fixOnTop {
     position: fixed;
     top: 0px;
+}
+
+.logo__footer p {
+    display: none;
+}
+
+.footer__links {
+    display: none;
+}
+
+.contact {
+    display: none;
+}
+
+.background__nav {
+    background-color: #2A2A2A !important;
+}
+
+.menu__container {
+    display: none;
 }
 
 .header__container {
@@ -93,7 +117,7 @@ header {
     background: #2A2A2A;
     box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.12);
     justify-content: space-evenly;
-    z-index: 9999;
+    z-index: 2;
 }
 
 .reservation__button button {
@@ -377,14 +401,9 @@ footer {
     justify-content: space-evenly;
 }
 
-.logo__footer {
+.logo__footer img {
     width: 189px;
     height: 78.3px;
-}
-
-.logo__footer img {
-    width: 100%;
-    height: 100%;
 }
 
 .bar {
@@ -415,7 +434,7 @@ footer {
     background: #7A7266;
 }
 
-.border_btn{
+.border_btn {
     border: 1.5px solid #FFFFFF;
     background-color: #2A2A2A;
 }
@@ -429,5 +448,244 @@ footer {
     color: #FFFFFF;
     height: 106px;
     text-transform: uppercase;
-    padding-top: 12px; 
+    padding-top: 12px;
+}
+
+@media(min-width: 1280px) {
+
+    .nav__container {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        top: 0;
+        background-color: transparent;
+        filter: drop-shadow(0px 4px 20px rgba(0, 0, 0, 0.12));
+        height: 90px;
+    }
+
+    .reservation__button button {
+        background-color: #FFFFFF;
+        color: #2A2A2A;
+    }
+
+    .menu__icon {
+        display: none;
+    }
+
+    .menu__container {
+        display: block;
+        height: 40px;
+        padding: 8px 24px;
+    }
+
+    .menu__container ul li {
+        font-size: 16px;
+        color: #FFFFFF;
+        display: inline-block;
+        padding: 8px 24px;
+        cursor: pointer;
+    }
+
+    .logo img {
+        width: 113.4px;
+        height: 54px;
+    }
+
+    .buttons__container {
+        display: flex;
+        justify-content: space-between;
+        width: 336px;
+    }
+
+    .buttons__container button {
+        padding: 12px 16px;
+    }
+
+    .suits__container {
+        height: 782px;
+    }
+
+    .carousel__flex {
+        width: 752px;
+        height: 440px;
+    }
+
+    .carousel__container {
+        width: auto;
+        height: auto;
+    }
+
+    .carousel {
+        width: 752px;
+        height: 440px;
+    }
+
+    .carousel-inner {
+        width: 100%;
+        height: 100%;
+    }
+
+    .carousel-control-next,
+    .carousel-control-prev {
+        width: 6.5%;
+    }
+
+    .box_container {
+        flex-direction: row;
+        justify-content: space-evenly;
+        top: 377px;
+        width: 342px;
+        height: 128px;
+    }
+
+    .more__button button {
+        margin: 0;
+    }
+
+    .hyperlink {
+        margin-top: 100px;
+    }
+
+    .about__motel {
+        height: 704px;
+    }
+
+    .motel__background {
+        margin-bottom: 32px;
+        position: inherit;
+        width: 568px;
+        height: 544px;
+    }
+
+    .motel__description {
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.08);
+        margin-top: 32px;
+        position: inherit;
+        width: 568px;
+        height: 544px;
+    }
+
+    .about__container {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        align-items: center;
+        height: 704px;
+    }
+
+    .more__button {
+        margin-top: 24px;
+    }
+
+    .courtesy__section {
+        height: 655px;
+    }
+
+    .box {
+        width: 368px;
+        height: 377px;
+    }
+
+    .description__card {
+        margin-top: 32px;
+        width: 304px;
+        height: 81px;
+    }
+
+    .location__section {
+        height: 450px;
+    }
+
+    .location__container {
+        display: flex;
+        width: 992px;
+        height: 290px;
+    }
+
+    .map {
+        width: 496px;
+        height: 290px;
+    }
+
+    iframe {
+        width: 100%;
+        height: 100%;
+    }
+
+    .location__description {
+        justify-content: center;
+        gap: 20px;
+        width: 496px;
+        height: 290px;
+    }
+
+    .location__description p {
+        width: 260px;
+    }
+
+    footer {
+        height: 290px;
+    }
+
+    .font-size {
+        font-size: 14px;
+    }
+
+    .logo__footer {
+        line-height: 22.4px;
+        width: 263px;
+        height: 154px;
+    }
+
+    .logo__footer img {
+        width: auto;
+    }
+
+    .logo__footer p {
+        display: block;
+        margin-top: 32px;
+        font-weight: 300;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 106px;
+    }
+
+    .whatsapp h2 {
+        font-size: 11px;
+        padding-bottom: 10px;
+    }
+    .email h2 {
+        padding-bottom: 10px;
+        font-size: 11px;
+    }
+
+    .bar {
+        display: none;
+    }
+
+    .contact__container {
+        display: none;
+    }
+
+    .footer__links {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 98px;
+    }
+
+    .auxiliar {
+        display: flex;
+        flex-direction: row;
+        gap: 132px;
+    }
+
+    .copyright {
+        height: 36px;
+    }
+
 }
