@@ -51,11 +51,6 @@ a {
     display: none;
 }
 
-.background__nav {
-    background-color: #2A2A2A !important;
-    transition: 0.6s;
-}
-
 .menu__container {
     display: none;
 }
@@ -456,6 +451,11 @@ footer {
 }
 
 @media(min-width: 1280px) {
+
+    .background__nav {
+        background-color: #2A2A2A !important;
+        transition: 0.6s;
+    }
 
     .nav__container {
         display: flex;

@@ -2,15 +2,21 @@ const nav = document.getElementsByClassName("nav__container")[0];
 const navTop = nav.offsetTop;
 
 window.onscroll = function () {
-    fixOnTop();
+    navTop > 0 ? fixOnTop() : responsivo();
 }
 
 function fixOnTop() {
     if (window.pageYOffset >= navTop) {
         nav.classList.add("fixOnTop");
-        nav.classList.add("background__nav");
     } else {
         nav.classList.remove("fixOnTop");
+    }
+}
+
+function responsivo() {
+    if (window.pageYOffset > navTop) {
+        nav.classList.add("background__nav");
+    } else {
         nav.classList.remove("background__nav");
     }
 }
