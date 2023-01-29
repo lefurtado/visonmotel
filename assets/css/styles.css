@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Playfair+Display:wght@600&family=Titillium+Web&display=swap');
 
 header {
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('../assets/imagem1.png');
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url('/assets/img/imagem1.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -201,7 +201,7 @@ header {
 }
 
 .motel__background {
-    background-image: url('../assets/imagem3.png');
+    background-image: url('/assets/img/imagem3.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -262,15 +262,15 @@ header {
 }
 
 .card_1 {
-    background-image: url('../assets/cortesia1.jpg');
+    background-image: url('/assets/img/cortesia1.jpg');
 }
 
 .card_2 {
-    background-image: url('../assets/aniversario.jpg');
+    background-image: url('/assets/img/aniversario.jpg');
 }
 
 .card_3 {
-    background-image: url('../assets/descontos.jpg');
+    background-image: url('/assets/img/descontos.jpg');
 }
 
 .description__card {
