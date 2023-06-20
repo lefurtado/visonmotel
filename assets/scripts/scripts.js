@@ -6,7 +6,7 @@ window.onscroll = function () {
 }
 
 function fixOnTop() {
-    if (window.pageYOffset >= navTop) {
+    if (window.scrollY >= navTop) {
         nav.classList.add("fixOnTop");
     } else {
         nav.classList.remove("fixOnTop");
@@ -14,7 +14,7 @@ function fixOnTop() {
 }
 
 function responsivo() {
-    if (window.pageYOffset > navTop) {
+    if (window.scrollY > navTop) {
         nav.classList.add("background__nav");
     } else {
         nav.classList.remove("background__nav");
